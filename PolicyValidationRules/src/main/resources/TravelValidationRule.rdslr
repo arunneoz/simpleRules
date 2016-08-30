@@ -3,8 +3,10 @@ import redhat.policyvalidationrules.model.Travel;
 
 rule "TravelValidationRule"
 	dialect "mvel"
+	no-loop true
 	when
 		If there is a Rapid Policy Request
 		If RapidRequest has Travel with Travel Code  "B" and Travel Days greater than "10"
 	then
+		Setting the Result to  "TravelConditional"
 end
