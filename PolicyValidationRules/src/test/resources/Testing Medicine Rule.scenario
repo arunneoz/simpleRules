@@ -11,7 +11,7 @@
           <collectionFieldList>
             <field-data>
               <name>meds</name>
-              <value>java.</value>
+              <value>java.util.Arrays.asList({&quot;Red&quot;,&quot;X&quot;},{&quot;Yellow&quot;,&quot;Y&quot;})</value>
               <nature>4</nature>
             </field-data>
             <field-data>
