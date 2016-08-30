@@ -34,15 +34,18 @@
         <expect-field>
           <fieldName>result</fieldName>
           <expected>Conditional</expected>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[r] field [result] was [] expected [Conditional].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>r</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-08-30 15:09:07.391 UTC</lastRunResult>
+  <lastRunResult>2016-08-30 15:30:01.627 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
