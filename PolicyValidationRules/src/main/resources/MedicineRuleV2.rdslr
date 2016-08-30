@@ -2,6 +2,9 @@ import redhat.policyvalidationrules.model.RapidRequest;
 
 rule "MedicineRuleV2"
 	dialect "mvel"
+	no-loop true
 	when
+		If there is a Rapid Policy Request with Medication of color  "color"
 	then
+		Setting the Result "Conditional"
 end
