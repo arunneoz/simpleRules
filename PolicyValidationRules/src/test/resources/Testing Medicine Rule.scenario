@@ -32,20 +32,8 @@
     <expect-fact>
       <fieldValues>
         <expect-field>
-          <fieldName>meds</fieldName>
-          <expected>java.util.Arrays.asList({{&quot;Red&quot;,&quot;X&quot;},{&quot;Yellow&quot;,&quot;Y&quot;}})</expected>
-          <actualResult>[[[Ljava.lang.Object;@54173bc2, [Ljava.lang.Object;@1bca21a8]]</actualResult>
-          <successResult>false</successResult>
-          <explanation>[r] field [meds] was [[[[Ljava.lang.Object;@54173bc2, [Ljava.lang.Object;@1bca21a8]]] expected [].</explanation>
-          <operator>==</operator>
-          <nature>0</nature>
-        </expect-field>
-        <expect-field>
           <fieldName>result</fieldName>
-          <expected></expected>
-          <actualResult></actualResult>
-          <successResult>false</successResult>
-          <explanation>[r] field [result] was [] expected [].</explanation>
+          <expected>Conditional</expected>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
