@@ -6,4 +6,5 @@ rule "MedicineRuleV2"
 		If there is a Rapid Policy Request
 		If RapidRequest contains Medication Record with Medication of color  "Yellow"
 	then
+		Setting the Result to  "YellowConditional"
 end
