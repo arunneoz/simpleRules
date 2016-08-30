@@ -3,6 +3,7 @@ import redhat.policyvalidationrules.model.Medicine;
 
 rule "MedicineRuleV1"
 	dialect "mvel"
+	no-loop true
 	when
 		If there is a Rapid Policy Request
 	then
