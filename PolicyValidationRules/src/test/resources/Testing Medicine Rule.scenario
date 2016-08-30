@@ -11,7 +11,7 @@
           <collectionFieldList>
             <field-data>
               <name>meds</name>
-              <value>java.util.Arrays.asList({&quot;Red&quot;,&quot;X&quot;},{&quot;Yellow&quot;,&quot;Y&quot;})</value>
+              <value>java.util.Arrays.asList({{&quot;Red&quot;,&quot;X&quot;},{&quot;Yellow&quot;,&quot;Y&quot;}})</value>
               <nature>4</nature>
             </field-data>
           </collectionFieldList>
@@ -25,20 +25,27 @@
       <name>r</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>0</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
+    </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>result</fieldName>
           <expected>Conditional</expected>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[r] field [result] was [] expected [Conditional].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>r</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2016-08-30 15:03:14.778 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
