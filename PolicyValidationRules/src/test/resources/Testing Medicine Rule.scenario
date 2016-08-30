@@ -14,18 +14,30 @@
               <value>java.util.Arrays.asList({&quot;Red&quot;,&quot;X&quot;},{&quot;Yellow&quot;,&quot;Y&quot;})</value>
               <nature>4</nature>
             </field-data>
-            <field-data>
-              <name>meds</name>
-              <value></value>
-              <nature>0</nature>
-            </field-data>
           </collectionFieldList>
+        </field-data>
+        <field-data>
+          <name>age</name>
+          <value>30</value>
+          <nature>4</nature>
         </field-data>
       </fieldData>
       <name>r</name>
       <isModify>false</isModify>
     </fact-data>
     <execution-trace/>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>result</fieldName>
+          <expected>Conditional</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>r</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
   </fixtures>
   <rules/>
   <inclusive>false</inclusive>
