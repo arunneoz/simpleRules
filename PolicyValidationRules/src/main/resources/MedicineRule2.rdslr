@@ -1,7 +1,0 @@
-import java.lang.Number;
-
-rule "MedicineRule2"
-	dialect "mvel"
-	when
-	then
-end
