@@ -5,7 +5,6 @@ rule "MedicineRuleV1"
 	dialect "mvel"
 	when
 		If there is a Rapid Policy Request
-		If RapidRequest contains Medication of color  "Red"
 	then
 		Setting the Result to  "Conditional"
 end
