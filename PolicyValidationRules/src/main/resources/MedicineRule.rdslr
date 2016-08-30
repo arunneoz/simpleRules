@@ -1,4 +1,5 @@
 import redhat.policyvalidationrules.model.RapidRequest;
+import redhat.policyvalidationrules.model.Medicine;
 
 rule "MedicineRule"
 	dialect "mvel"
