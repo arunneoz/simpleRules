@@ -2,7 +2,7 @@ import redhat.policyvalidationrules.model.RapidRequest;
 import redhat.policyvalidationrules.model.Medicine;
 
 rule "MedicineRuleV1"
-	dialect "mvel"
+	dialect "java"
 	when
 		If there is a Rapid Policy Request
 		If RapidRequest contains Medication of color  "Red"
