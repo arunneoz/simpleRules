@@ -1,4 +1,5 @@
-import java.lang.Number;
+import redhat.policyvalidationrules.model.RapidRequest;
+import redhat.policyvalidationrules.model.Travel;
 
 rule "TravelValidationRule"
 	dialect "mvel"
