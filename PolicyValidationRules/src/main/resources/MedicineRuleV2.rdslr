@@ -1,4 +1,4 @@
-import java.lang.Number;
+import redhat.policyvalidationrules.model.RapidRequest;
 
 rule "MedicineRuleV2"
 	dialect "mvel"
