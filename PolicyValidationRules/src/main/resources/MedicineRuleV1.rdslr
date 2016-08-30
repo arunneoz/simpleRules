@@ -6,6 +6,7 @@ rule "MedicineRuleV1"
 	no-loop true
 	when
 		If there is a Rapid Policy Request
+		If RapidRequest contains Medication of color  "Red"
 	then
 		Setting the Result to  "Conditional"
 end
