@@ -1,13 +1,43 @@
 <scenario>
-  <name>Testing Medicine Rule</name>
+  <name>Testing Medicine Rule.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
-  <fixtures/>
+  <fixtures>
+    <fact-data>
+      <type>RapidRequest</type>
+      <fieldData>
+        <field-data>
+          <name>meds</name>
+          <collectionFieldList>
+            <field-data>
+              <name>meds</name>
+              <value>java.</value>
+              <nature>4</nature>
+            </field-data>
+            <field-data>
+              <name>meds</name>
+              <value></value>
+              <nature>0</nature>
+            </field-data>
+          </collectionFieldList>
+        </field-data>
+      </fieldData>
+      <name>r</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <execution-trace/>
+  </fixtures>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
   <imports>
-    <imports/>
+    <imports>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>redhat.policyvalidationrules.model.RapidRequest</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+    </imports>
   </imports>
-  <ksessions/>
+  <ksessions>
+    <string>defaultKieSession</string>
+  </ksessions>
 </scenario>
