@@ -157,7 +157,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>med</valueString>
+        <valueString>java.util.Arrays.asList(med)</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
