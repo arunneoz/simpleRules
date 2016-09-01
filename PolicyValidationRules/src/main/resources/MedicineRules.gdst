@@ -64,7 +64,7 @@
           <hideColumn>false</hideColumn>
           <width>-1</width>
           <header>Contains Medication</header>
-          <constraintValueType>1</constraintValueType>
+          <constraintValueType>3</constraintValueType>
           <factField>meds</factField>
           <fieldType>Collection</fieldType>
           <operator>contains</operator>
@@ -72,6 +72,7 @@
         </condition-column52>
       </conditions>
       <window>
+        <operator></operator>
         <parameters/>
       </window>
     </Pattern52>
