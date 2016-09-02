@@ -35,7 +35,7 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>Medicine</header>
+      <header> Color-Red</header>
       <constraintValueType>1</constraintValueType>
       <parameters/>
       <definition>
@@ -89,7 +89,7 @@
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>Medicine</header>
+          <header> Color-Red</header>
           <constraintValueType>1</constraintValueType>
           <fieldType>Boolean</fieldType>
           <parameters/>
