@@ -12,6 +12,32 @@
   <attributeCols/>
   <conditionPatterns>
     <Pattern52>
+      <factType>Medicine</factType>
+      <boundName>med</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString>Red</valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>Medication Color</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>color</factField>
+          <fieldType>String</fieldType>
+          <operator>==</operator>
+          <valueList>Red,Yellow,Blue</valueList>
+          <parameters/>
+        </condition-column52>
+      </conditions>
+      <window>
+        <parameters/>
+      </window>
+    </Pattern52>
+    <Pattern52>
       <factType>RapidRequest</factType>
       <boundName>r</boundName>
       <isNegated>false</isNegated>
@@ -35,7 +61,7 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header> Color-Red</header>
+      <header>Medication-Color</header>
       <constraintValueType>1</constraintValueType>
       <parameters/>
       <definition>
@@ -44,11 +70,24 @@
             <constraintList>
               <constraints>
                 <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                  <value>Red</value>
                   <operator>==</operator>
-                  <constraintValueType>1</constraintValueType>
+                  <constraintValueType>6</constraintValueType>
                   <expression>
-                    <parts/>
+                    <parts>
+                      <org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                        <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                          <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                          <name>color</name>
+                          <classType>java.lang.String</classType>
+                          <genericType>String</genericType>
+                        </next>
+                        <name>med</name>
+                        <classType>Medicine</classType>
+                        <genericType>Medicine</genericType>
+                        <factType>Medicine</factType>
+                      </org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                      <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next"/>
+                    </parts>
                     <index>2147483647</index>
                   </expression>
                   <parameters/>
@@ -89,7 +128,7 @@
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header> Color-Red</header>
+          <header>Medication-Color</header>
           <constraintValueType>1</constraintValueType>
           <fieldType>Boolean</fieldType>
           <parameters/>
@@ -167,9 +206,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>Red</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -179,7 +217,13 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>ColorConditional</valueString>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>RedConditional</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
