@@ -158,7 +158,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>$med</valueString>
+        <valueString>med</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
