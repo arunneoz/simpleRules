@@ -37,13 +37,13 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>Medication Color</header>
+          <width>213</width>
+          <header>Medication</header>
           <constraintValueType>1</constraintValueType>
           <factField>color</factField>
           <fieldType>String</fieldType>
           <operator>==</operator>
-          <valueList>Red,Yellow,Blue</valueList>
+          <valueList>Red,Blue,Yellow</valueList>
           <parameters/>
         </condition-column52>
       </conditions>
@@ -57,13 +57,18 @@
       <isNegated>false</isNegated>
       <conditions>
         <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>Rapid Request</header>
-          <constraintValueType>1</constraintValueType>
+          <width>273</width>
+          <header>RapidRequest Contains Red Medication</header>
+          <constraintValueType>3</constraintValueType>
           <factField>meds</factField>
           <fieldType>Collection</fieldType>
-          <operator>!= null</operator>
+          <operator>contains</operator>
           <parameters/>
         </condition-column52>
       </conditions>
@@ -72,84 +77,6 @@
         <parameters/>
       </window>
     </Pattern52>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Medication-Color</header>
-      <constraintValueType>1</constraintValueType>
-      <parameters/>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FromCompositeFactPattern>
-          <factPattern>
-            <constraintList>
-              <constraints>
-                <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                  <operator>==</operator>
-                  <constraintValueType>6</constraintValueType>
-                  <expression>
-                    <parts>
-                      <org.drools.workbench.models.datamodel.rule.ExpressionVariable>
-                        <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
-                          <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
-                          <name>color</name>
-                          <classType>java.lang.String</classType>
-                          <genericType>String</genericType>
-                        </next>
-                        <name>med</name>
-                        <classType>Medicine</classType>
-                        <genericType>Medicine</genericType>
-                        <factType>Medicine</factType>
-                      </org.drools.workbench.models.datamodel.rule.ExpressionVariable>
-                      <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next"/>
-                    </parts>
-                    <index>2147483647</index>
-                  </expression>
-                  <parameters/>
-                  <factType>Medicine</factType>
-                  <fieldName>color</fieldName>
-                  <fieldType>String</fieldType>
-                </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-              </constraints>
-            </constraintList>
-            <factType>Medicine</factType>
-            <isNegated>false</isNegated>
-            <window>
-              <parameters/>
-            </window>
-          </factPattern>
-          <expression>
-            <parts>
-              <org.drools.workbench.models.datamodel.rule.ExpressionVariable>
-                <next class="org.drools.workbench.models.datamodel.rule.ExpressionCollection">
-                  <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
-                  <name>meds</name>
-                  <classType>java.util.List</classType>
-                  <genericType>Collection</genericType>
-                  <parametricType>Medicine</parametricType>
-                </next>
-                <name>r</name>
-                <classType>RapidRequest</classType>
-                <genericType>RapidRequest</genericType>
-                <factType>RapidRequest</factType>
-              </org.drools.workbench.models.datamodel.rule.ExpressionVariable>
-              <org.drools.workbench.models.datamodel.rule.ExpressionCollection reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next"/>
-            </parts>
-            <index>2147483647</index>
-          </expression>
-        </org.drools.workbench.models.datamodel.rule.FromCompositeFactPattern>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>Medication-Color</header>
-          <constraintValueType>1</constraintValueType>
-          <fieldType>Boolean</fieldType>
-          <parameters/>
-          <varName></varName>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
   </conditionPatterns>
   <actionCols>
     <set-field-col52>
@@ -231,19 +158,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>$med</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>ArunConditional</valueString>
+        <valueString>&quot;Arun&quot;</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
