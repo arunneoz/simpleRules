@@ -7,7 +7,7 @@ rule "Row 1 MedicineRule5"
 	no-loop true
 	when
 		r : RapidRequest( )
-		Medicine( color == "White" ) from r.meds
+		Medicine( color == "X" ) from r.meds
 	then
 		modify( r ) {
 				setResult( "WhiteConditional" )
