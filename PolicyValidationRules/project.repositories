@@ -3,38 +3,6 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>releases</id>
-        <url>http://172.16.177.135:8081/nexus/content/repositories/releases/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss-local</id>
-        <url>http://172.16.177.135:8081/nexus/content/groups/public/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>central</id>
-        <url>http://172.16.177.135:8081/nexus/content/repositories/central/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss-eap-6.4.0</id>
-        <url>http://172.16.177.135:8081/nexus/content/repositories/jboss-eap-6.4.0/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>jboss-jdg</id>
         <url>http://172.16.177.135:8081/nexus/content/repositories/jboss-jdg/</url>
         <source>SETTINGS</source>
@@ -51,8 +19,32 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-bpms-6.3</id>
-        <url>http://172.16.177.135:8081/nexus/content/repositories/jboss-bpms-6.3/</url>
+        <id>jboss-local</id>
+        <url>http://172.16.177.135:8081/nexus/content/groups/public/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>jboss-eap-6.4.0</id>
+        <url>http://172.16.177.135:8081/nexus/content/repositories/jboss-eap-6.4.0/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>releases</id>
+        <url>http://172.16.177.135:8081/nexus/content/repositories/releases/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>central</id>
+        <url>http://172.16.177.135:8081/nexus/content/repositories/central/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -62,6 +54,14 @@
         <id>local</id>
         <url>/home/ose/.m2/repository</url>
         <source>LOCAL</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>jboss-bpms-6.3</id>
+        <url>http://172.16.177.135:8081/nexus/content/repositories/jboss-bpms-6.3/</url>
+        <source>SETTINGS</source>
       </metadata>
     </repository>
   </repositories>
