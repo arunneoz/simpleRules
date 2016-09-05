@@ -10,7 +10,7 @@ rule "Row 1 MedicineRule5"
 		Medicine( color == "White" ) from r.meds
 	then
 		modify( r ) {
-				setResult( "ColorConditional" )
+				setResult( "WhiteConditional" )
 		}
 		System.out.println(" Color Condition Hit");
 end
