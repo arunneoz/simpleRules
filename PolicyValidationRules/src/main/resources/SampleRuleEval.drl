@@ -1,0 +1,16 @@
+import redhat.policyvalidationrules.model.Medicine;
+import redhat.policyvalidationrules.model.RapidRequest;
+
+//from row number: 1
+rule "Row 1 MedicineRule5"
+	dialect "mvel"
+	when
+		r : RapidRequest( )
+		Medicine( color == "White" ) from r.meds
+	then
+		modify( r ) {
+				setResult( "ColorConditional" )
+		}
+		System.out.println(" Color Condition Hit");
+end
+
