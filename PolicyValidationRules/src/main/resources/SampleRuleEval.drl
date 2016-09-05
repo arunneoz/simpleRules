@@ -4,6 +4,7 @@ import redhat.policyvalidationrules.model.RapidRequest;
 //from row number: 1
 rule "Row 1 MedicineRule5"
 	dialect "mvel"
+	no-loop true
 	when
 		r : RapidRequest( )
 		Medicine( color == "White" ) from r.meds
