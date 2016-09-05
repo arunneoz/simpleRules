@@ -3,17 +3,9 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>central</id>
-        <url>http://172.16.177.135:8081/nexus/content/repositories/central/</url>
+        <id>releases</id>
+        <url>http://172.16.177.135:8081/nexus/content/repositories/releases/</url>
         <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>guvnor-m2-repo</id>
-        <url>http://localhost:8085/business-central/maven2/</url>
-        <source>PROJECT</source>
       </metadata>
     </repository>
     <repository>
@@ -27,8 +19,8 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>releases</id>
-        <url>http://172.16.177.135:8081/nexus/content/repositories/releases/</url>
+        <id>central</id>
+        <url>http://172.16.177.135:8081/nexus/content/repositories/central/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -43,14 +35,6 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>local</id>
-        <url>/home/ose/.m2/repository</url>
-        <source>LOCAL</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>jboss-jdg</id>
         <url>http://172.16.177.135:8081/nexus/content/repositories/jboss-jdg/</url>
         <source>SETTINGS</source>
@@ -59,9 +43,25 @@
     <repository>
       <include>true</include>
       <metadata>
+        <id>guvnor-m2-repo</id>
+        <url>http://localhost:8085/business-central/maven2/</url>
+        <source>PROJECT</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
         <id>jboss-bpms-6.3</id>
         <url>http://172.16.177.135:8081/nexus/content/repositories/jboss-bpms-6.3/</url>
         <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>local</id>
+        <url>/home/ose/.m2/repository</url>
+        <source>LOCAL</source>
       </metadata>
     </repository>
   </repositories>
