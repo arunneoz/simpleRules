@@ -21,9 +21,9 @@
           <width>-1</width>
           <header>Rapid Request</header>
           <constraintValueType>1</constraintValueType>
-          <factField>meds</factField>
-          <fieldType>Collection</fieldType>
-          <operator>!= null</operator>
+          <factField>this</factField>
+          <fieldType>this</fieldType>
+          <operator></operator>
           <parameters/>
         </condition-column52>
       </conditions>
