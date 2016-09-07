@@ -2,6 +2,10 @@ import java.lang.Number;
 
 rule "MedicationRule3"
 	dialect "mvel"
+	no-loop true
 	when
+		If there is a Rapid Policy Request
+		If RapidRequest contains Medication Record with Medication of color  "Purple"
 	then
+		Setting the Result to  "PurpleConditional"
 end
