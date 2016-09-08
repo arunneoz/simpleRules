@@ -34,7 +34,7 @@
           <hideColumn>false</hideColumn>
           <width>-1</width>
           <header>Rapid Request</header>
-          <constraintValueType>1</constraintValueType>
+          <constraintValueType>3</constraintValueType>
           <factField>this</factField>
           <fieldType>this</fieldType>
           <operator></operator>
@@ -188,47 +188,5 @@
   </imports>
   <packageName></packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
-  <data>
-    <list>
-      <value>
-        <valueNumeric class="int">1</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>White</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>AegonConditional</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-  </data>
+  <data/>
 </decision-table52>
